@@ -1,0 +1,957 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Nova Square', sans-serif;
+}
+
+body{
+    max-width: 1600px;
+    display: grid;
+    grid-template-rows: "header" "main" "footer";
+    grid-template-columns: 100%;
+}
+
+header{
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header span img{
+    width: 120px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+header ul li{
+    padding: 8px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header ul li a:hover{
+    text-decoration: #e6bd43 solid underline;
+}
+
+header ul #yelow{
+    background-color: #e6bd43;
+    text-align: center;
+}
+
+.innhold-forside #intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.innhold-forside #intro h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.innhold-forside #intro div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.innhold-forside #intro img{
+    width: 100%;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.innhold-forside #intro video{
+    display: none;
+}
+
+.innhold-forside #intro div p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.innhold-forside #intro div a{
+    color: #000;
+    background-color: #e6bd43;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 780;
+    padding: 20px;
+    width: 100%;
+}
+
+.innhold-forside #article2{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.innhold-forside #article2 h2{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+#company{
+    background-color: #e6bd43;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 5rem;
+}
+
+.innhold-forside article img{
+    width: 70%;
+}
+
+.innhold-forside article div{
+    width: 50%;
+}
+
+.innhold-forside article div h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.innhold-forside article div p{
+    margin-bottom: 2.5rem;
+}
+
+.innhold-forside article div a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    border: 4px solid #000;
+    padding: 20px;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.services{
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.services h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services div article{
+    text-align: center;
+}
+
+.services div article i{
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+}
+
+.services article h3{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.services article p{
+    margin-bottom: 4rem;
+}
+
+.services form{
+    background-color: lightgray;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.services form label{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.services form div{
+    margin-top: 1.2rem;
+}
+
+.services form input{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.services form #signup-button{
+    background-color: #e6bd43;
+    border: 1px solid #e6bd43;
+}
+
+.innhold-produktside #portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.innhold-produktside #portfolio h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.innhold-produktside #portfolio img{
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.job-links{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    width: 80%;
+    margin: auto;
+    /* background-color: #e6bd43; */
+}
+
+.job-links h2{
+    font-size: 2rem;
+    padding-bottom: 25px;
+    border-bottom: 4px solid #e6bd43;
+}
+
+.job-links nav{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.job-links nav a{
+    font-size: 1.5rem;
+    padding: 17px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+#branding{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+#branding h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 25px;
+    border-bottom: 4px solid #e6bd43;
+}
+
+#branding div article{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    min-width: 200px;
+    max-width: 692px;
+}
+
+#branding div article img{
+    width: 100%;
+}
+
+#branding div article p{
+    padding-top: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#design{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+#design h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 25px;
+    border-bottom: 4px solid #e6bd43;
+}
+
+#design article{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    min-width: 200px;
+    max-width: 692px;
+}
+
+#design article img{
+    width: 100%;
+}
+
+#design article p{
+    padding-top: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#development{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+#development h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 25px;
+    border-bottom: 4px solid #e6bd43;
+}
+
+#development article{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    min-width: 200px;
+    max-width: 692px;
+}
+
+#development article img{
+    width: 100%;
+}
+
+#development article p{
+    padding-top: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #252525;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer h2{
+    color: white;
+    padding-top: 10px;
+}
+
+footer article{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer article a{
+    padding: 0;
+    margin-top: 25px;
+}
+
+footer article a i{
+    color: white;
+    font-size: 4rem;
+}
+
+.about{
+    background-image: url("../img/th.jpg");  /* hentet fra: https://www.lux-review.com/are-apple-products-really-the-luxury-option/ --> */
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.about #company-info{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(255, 255, 250, 0.9);
+}
+
+.about #company-info h1{
+    text-align: center;
+}
+
+.about #company-info article{
+    width: 70%;
+    margin: auto;
+}
+
+.about #company-info article h2{
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.about #company-info article p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.about #company-info article a{
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    margin-top: 20px;
+    background-color: #e6bd43;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 780;
+    padding: 20px;
+}
+
+.clients{
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    margin: auto;
+    text-align: center;
+    background-color: #e6bd43
+}
+
+.clients h2{
+    margin-bottom: 60px;
+    font-size: 2rem;
+}
+
+.clients article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.clients article img{
+    width: 46%;
+}
+
+.contact{
+    background-color: rgb(235, 235, 235);
+}
+
+.contact h2{
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form h3{
+    font-size: 2rem;
+}
+
+.contact form label{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contact form input{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.contact form #message{
+   height: 100px;
+}
+
+.contact form #button{
+    margin-top: 15px;
+    width: 200px;
+    background-color: #e6bd43;
+    border: 1px solid yellow;
+}
+
+.contact article{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact article h3{
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.contact article #paragraf{
+    font-size: 1.9rem;
+}
+
+.contact article p{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.contact article p i{
+    font-size: 2rem;
+}
+
+.contact article p #address{
+    font-size: 2.6rem;
+}
+
+.contact iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.swipe-up{
+    background-color: aqua;
+    margin: 40px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content:flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.swipe-up a{
+    display: block;
+    text-align: center;
+    background-color: #000;
+    width: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.swipe-up a i{
+    font-size: 5rem;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header span img{
+        width: 90px;
+    }
+
+    header ul{
+        flex-direction: row;
+        font-size: 1.2rem;
+    }
+
+    header ul #yelow{
+        padding: 0;
+        display: inline-flex;
+    }
+
+    header ul #yelow a{
+        padding: 8px;
+    }
+
+    .about #company-info{
+        margin-right: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about #company-info h1{
+        text-align: start;
+    }
+
+
+    .about #company-info article{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about #company-info article a{
+        width: 270px;
+        justify-content: center;
+    }
+    main{
+        width: 100%
+    }
+
+    .services{
+        width: 100%;
+    }
+
+    .services h2{
+        font-size: 3rem;
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+
+    .services div{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 1rem;
+    }
+
+
+    .services div article{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 300px;
+    }
+
+    .clients h2{
+        font-size: 3rem;
+    }
+
+    .clients article{
+        display: flex;
+    }
+
+    .clients article img{
+        width: 10%;
+    }
+
+    .contact h2{
+        font-size: 3rem;
+    }
+
+    .contact div{
+        display: flex;
+        gap: 4rem;
+        padding-bottom: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .contact div article{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .contact div form{
+        margin-top: 0;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .innhold-forside #intro img{
+        display: none;
+    }
+
+    .innhold-forside #intro{
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .innhold-forside #intro h1{
+        font-size: 3rem;
+    }
+
+    .innhold-forside #intro video{
+        display: flex;
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        opacity: 0.6;
+        z-index: -1;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .innhold-forside #intro div{
+        width: 80%;
+        display: flex;
+    }
+
+    .innhold-forside #intro div p{
+        font-size: 1.5rem;
+    }
+
+    .innhold-forside #intro div a{
+        width: 230px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .innhold-forside #article2{
+        width: 80;
+        margin: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 60px;
+    }
+
+    .innhold-forside #article2 h2{
+        font-size: 2.5rem;
+    }
+    
+    .innhold-forside #article2 p{
+        font-size: 1.5rem;
+    }
+
+    .innhold-forside #company{
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .innhold-forside #company img{
+        width: 30%;
+    }
+
+    .innhold-forside #company div h2{
+        font-size: 2rem;
+    }
+
+    .innhold-forside #company div p{
+        font-size: 1rem;
+    }
+
+    .innhold-forside #company div a{
+        text-align: center;
+        width: 150px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .form-forside div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swipe-up{
+        margin-bottom: 20px;
+    }
+    
+    .swipe-up a{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .swipe-up a i{
+        font-size: 3rem;
+    }
+
+    #design{
+        width: 90%;
+    }
+
+    #design div{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    #design div article{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 300px;
+    }
+
+    #design div article img{
+        width: 95%;
+        margin: auto;
+        transition-duration: 0.5s;
+    }
+
+    #design div article img:hover{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #design div #større2{
+        max-width: 500px;
+    }
+
+    #branding{
+        width: 90%;
+    }
+
+    #branding div{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    #branding div article{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 300px;
+    }
+
+    #branding div article img{
+        width: 95%;
+        margin: auto;
+        transition-duration: 0.5s;
+    }
+
+    #branding div article img:hover{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #branding div #større{
+        max-width: 500px;
+    }
+
+    #development{
+        width: 90%;
+    }
+
+    #development div{
+        gap: 2rem;
+        display: flex;
+    }
+
+    #development div article{
+        flex-grow: 1;
+    }
+
+    #development div article img{
+        width: 95%;
+        margin: auto;
+        transition-duration: 0.5s;
+    }
+
+    #development div article img:hover{
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    header ul #yelow a:hover{
+        color: #e6bd43;
+        background-color: #252525;
+        text-decoration: none;
+    }
+
+    .innhold-forside #intro div a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .innhold-forside article div a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .services form #signup-button:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .innhold-produktside article nav a:hover{
+        background-color: #252525;
+        color:#e6bd43;
+    }
+
+    .about #company-info article a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .contact form #button:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .job-links{
+        width: 90%;
+    }
+
+    body{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header{
+        grid-column: span 3;
+    }
+
+    main{
+        grid-column: span 3;
+    }
+
+    footer{
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact div{
+        flex-wrap: wrap;
+    }
+}

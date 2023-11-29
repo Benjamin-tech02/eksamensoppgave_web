@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Den perffekte nettsiden til deg som vil lære å utvikle nettsider. Vi kan tilby et jobbsertifikat som er verifisert over heleverden.">
+    <meta name="keywords" content="Webutvikling, HTML, CSS, Java, Smarbeid med store bedrifter.">
+    <link rel="icon" href="img/logo1.png" type="image/x-icon">
+    <meta name="author" content="Yamen Al Mohemid">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d222ac55af.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header id="header">
+        <span ><a href="index.html"><img src="img/logo1.png" alt="logo of the company"></a></span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="yelow"><a href="about.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        <section class="innhold-produktside">
+            <div id="portfolio">
+                <h1>Portfolio</h1>
+                <!-- hentet fra: https://www.lux-review.com/are-apple-products-really-the-luxury-option/ -->
+                <img src="img/th.jpg" alt="Intro picture">
+            </div>
+
+            <article class="job-links">
+                <h2>Explore previous jobs</h2>
+                <nav>
+                    <a href=#branding aria-label="Jump to the branding section">Branding</a>
+                    <a href=#design aria-label="Jump to the design section">Design</a>
+                    <a href=#development aria-label="Jump to the development section">Development</a>
+                </nav>
+            </article>
+        </section>
+
+        <section id="branding" itemscope itemtype="https://schema.org/Service">
+            <h2 itemprop="provider" itemscope itemtype="https://schema.org/Organization">Branding</h2>
+            <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Branding Example 1" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Branding Example 1" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Branding Example 1" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+                <article id="større" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Branding Example 1" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="design" itemscope itemtype="https://schema.org/Service">
+            <h2 itemprop="provider" itemscope itemtype="https://schema.org/Organization">Design</h2>
+            <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Design Example" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Design Example " itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <article id="større2" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Design Example 1" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="development" itemscope itemtype="https://schema.org/Service">
+            <h2 itemprop="provider" itemscope itemtype="https://schema.org/Organization">Development</h2>
+            <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Development Example 1" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+                <article itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <img src="img/placeholder.jpg" alt="Development Example" itemprop="image">
+                    <p itemprop="description">Lorem, ipsum dolor.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="swipe-up">
+            <a href="#header" aria-label="swipe to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+        <span ><a href="index.html"><img src="img/logo1.png" alt="logo of the company" itemprop="image"></a></span>
+        <h2 itemprop="headline">Copyrights Companyname 2023</h2>
+        <article itemprop="links">
+            <a href="https://www.facebook.com/hiofnorge/" aria-label="The companys facebook link"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/studentparlamentet_hiof/" aria-label="The companys instagram link"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/hogskolen-i-ostfold/" aria-label="The companys linkedin link"><i class="fa-brands fa-linkedin"></i></a>
+        </article>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Den perffekte nettsiden til deg som vil lære å utvikle nettsider. Vi kan tilby et jobbsertifikat som er verifisert over heleverden.">
+    <meta name="keywords" content="Webutvikling, HTML, CSS, Java, Smarbeid med store bedrifter.">
+    <link rel="icon" href="img/logo1.png" type="image/x-icon">
+    <meta name="author" content="Yamen Al Mohemid">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d222ac55af.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Forside</title>
+</head>
+<body>
+
+    <header id="header">
+        <span ><a href="index.html"><img src="img/logo1.png" alt="logo of the company"></a></span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="yelow"><a href="about.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <main itemscope itemtype="https://schema.org/WebPage">
+        <section class="innhold-forside">
+            <div id="intro" itemprop="mainEntity" itemscope itemtype="https://schema.org/Introduction">
+                <h1 itemprop="headline">Compeling headline</h1>
+                <!-- hentet fra: https://www.lux-review.com/are-apple-products-really-the-luxury-option/ -->
+                <img src="img/th.jpg" alt="intro picture" itemprop="image">
+                <video src="video/mountains.mp4" autoplay muted loop itemprop="video">
+                </video>
+                <div itemprop="description">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda non rerum temporibus repellendus porro quia aperiam, laudantium ipsam. Blanditiis quis ea nesciunt, nulla maxime id!</p>
+                    <a id="services" href=#service title="Read more about our services">Read more about our services</a>
+                </div>
+            </div>
+
+            <article id="article2" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+                <h2 itemprop="headline">Enganging subheading, what can you help your visitors with</h2>
+                <p itemprop="articleBody">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iusto et aperiam cum voluptate excepturi neque, aliquam sed, quo inventore ratione ut architecto vitae quisquam hic a totam veniam. Non.</p>
+            </article>
+
+            <article id="company" itemscope itemtype="https://schema.org/AboutPage">
+                <!-- hentet fra: https://www.manncat.com/visitors-information/placeholder-400x400/ -->
+                <img src="img/placeholder.jpg" alt="Test" itemprop="image">
+                <div itemprop="description">
+                    <h2>About our company</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius quam aut, inventore reiciendis, facilis fuga odit atque soluta sint laudantium debitis nostrum eveniet quas aliquam voluptates mollitia sapiente maiores similique placeat suscipit! Harum necessitatibus et cum praesentium eligendi facilis quisquam recusandae ab, ex, dolores quo possimus voluptatibus veniam minima tenetur, tempore quod?</p>
+                    <a href="about.html">Read more about us</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="service" class="services" itemscope itemtype="https://schema.org/Service">
+            <h2 itemprop="provider">Our services</h2>
+            <div>
+                <article itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <i class="fa-solid fa-users"></i>
+                    <h3 itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer"><span itemprop="name">Branding</span></h3>
+                    <p itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+    
+                <article itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3 itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer"><span itemprop="name">Branding</span></h3>
+                    <p itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+    
+                <article itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <i class="fa-solid fa-code"></i>
+                    <h3 itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer"><span itemprop="name">Branding</span></h3>
+                    <p itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+    
+                <article itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3 itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer"><span itemprop="name">Branding</span></h3>
+                    <p itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+            </div>
+
+            <form action="frontend" class="form-forside" itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+                <label for="signup">Sign up for our newsletter</label>
+                <div>
+                    <input type="email" id="signup" placeholder="Nora@epost.no">
+                    <input type="button" value="Sign me up!" id="signup-button">
+                    <meta itemprop="userInteractionCount" content="10" />
+                </div>
+            </form>
+        </section>
+
+        <div class="swipe-up">
+            <a href="#header" aria-label="swipe to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+        <span ><a href="index.html"><img src="img/logo1.png" alt="logo of the company"></a></span>
+        <h2>Copyrights Companyname 2023</h2>
+        <article>
+            <a href="https://www.facebook.com/hiofnorge/" aria-label="The companys facebook link"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/studentparlamentet_hiof/" aria-label="The companys instagram link"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/hogskolen-i-ostfold/" aria-label="The companys linkedin link"><i class="fa-brands fa-linkedin"></i></a>
+        </article>
+    </footer>
+    
+</body>
+</html>
